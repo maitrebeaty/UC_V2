@@ -41,7 +41,7 @@ body {
 }
 
 .centered-container {
-  max-width: 1020px;
+  max-width: 100%; /*was 1020 */
   margin: 0px auto;
   padding: 0px 16px;
 }
@@ -70,6 +70,13 @@ body {
   padding: 0px 16px;
 }
 
+#footer {
+	height: 30px;
+	width: 100%;
+	background: #000;
+	background-color: green;
+}
+
 @media screen and (min-width: 700px) {
   .nav ul {
     text-align: right;
@@ -81,9 +88,30 @@ body {
     border-left: 1px solid black;
     text-align: left;
   }
+  
+  .location {
+	  text-align: left;
+	  border-left: 1px solid green;
+	  color: green;
+  }
 
   .single-service {
     width: 50%;
     float: left;
   }
+  
+  .single-service .img {
+	  padding-left: 5px;
+	  padding-right: 5px;
+  }
+  #TEST {
+	  display: block;
+	  color: green;
+  }
+  #footer .nav ul li:first-child {
+	  color: pink;
+	  background-color: none;
+	  transition: white 1s;
+  }
+  
 }
